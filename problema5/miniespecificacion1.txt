@@ -1,0 +1,34 @@
+
+
+1.  Inicio
+2.  totalmensual, d[0,n]
+3.  descuento,    d[0,n]
+4.  consumolit,   d[0,n] 
+5.  costolit,     d[0,n]
+6.  consumotelf,  d[0,n]
+7.  costomin,     d[0,n] 
+8.  edad,         i[0,n] 
+9.  totalagua,    d[0,n]
+10. totaltelf,    d[0,n]
+
+
+11. <<"Escribe la edad: "
+12. >> edad
+13. <<"Escribe el costo del litro de agua de tu región: "
+14. >> costolit
+15. <<"Escribe la cantidad de litros de agua consumidos en el mes: "
+16. >> consumolit
+17. <<"Escribe el costo de cada minuto de telefonía: "
+18. >> costomin
+19. <<"Escribe la cantidad de minutos consumidos en el mes: "
+20. >> consumotelf
+21. totaltelf <-- costomin * consumotelf
+22. totalagua <-- costolit * consumolit
+23. totalmensual <-- totaltelf + totalagua
+24. Si edad <20 entonces
+25. 	descuento <-- 20
+26. 	descuento <-- (totalmensual * descuento) /100
+27. 	totalmensual <-- totalmensual - descuento
+28. Fin si
+29. <<"El valor total a pagar de la mensualidad de servicios básicos es: " + totalmensual
+30. Fin

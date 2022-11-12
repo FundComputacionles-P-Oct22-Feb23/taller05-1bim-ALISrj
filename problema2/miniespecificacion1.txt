@@ -1,0 +1,25 @@
+1. Inicio.
+2. descripcion, x(100)[{A-Z} , {a-z} , {BS}]
+3. cantidad,        i[0,n]
+4. preciouni,       d[0,n]
+5. descuento,       d[0,n] <-- 15
+6. total,           d[0,n]
+
+7. << "Ingrese la descripción/nombre del artículo: "
+8. >> descripcion
+
+9. << "Ingrese la cantidad de artículos que tendra el pedido: "
+10. >> cantidad
+
+11. << "Ingrese el valor unitario del artículo: "
+12. >> preciouni
+
+
+13. total <-- preciouni * cantidad
+
+14. Si cantidad > 50 entonces
+15. 	descuento <-- (total * descuento)/100
+16.     total <-- total - descuento
+17. Fin si
+18. << "El valor total a pagar por la cantidad de" +cantidad+ "articulos, de descripcion: " +descripcion+ " es " + total
+19. Fin

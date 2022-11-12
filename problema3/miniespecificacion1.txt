@@ -1,0 +1,17 @@
+1. Inicio.
+2. gradosC, d[0,1,2,3,...,100]
+3. gradosF, d[-n,n]
+4. gradosK, d[-n,n]
+
+
+5. << "Ingrese la temperatura en grados centígrados que quiere transformar, en un rango de 0 a 100: "
+6. >> gradosC
+
+7. Si gradosc >= 0 or <=100 entonces
+8. 	gradosF <-- 9/5 * gradosC + 32
+9.	gradosK <-- gradosC + 273,15
+10.	<< gradosC + "es igual a: " + gradosF + "en grados Farenheit y es igual a " + gradosK " en grados Kelvin. "
+11. De lo contrario
+12. 	<< "El número digitado está fuera del rango pedido."
+13. Fin si
+14. Fin 

@@ -1,0 +1,24 @@
+1. Inicio.
+2. costo_kilovatio, d[0,n]
+3. consumo,         d[0,n]
+4. edad,            i[0,n]
+5. descuento,       d[0,n] <-- 10
+6. total,           d[0,n]
+
+7. << "Ingrese la edad: "
+8. >> edad
+
+9. << "Ingrese el costo de kilovatio por hora: "
+10. >> costo_kilovatio
+
+11. << "Ingrese el consumo mensual: "
+12. >> consumo
+
+13. total <-- costo_kilovatio * consumo
+
+14. Si edad >= 65 entonces
+15. 	descuento <-- (total * descuento)/100
+16.     total <-- total - descuento
+17. Fin si
+18. << "El valor total a pagar por la planilla es: " + total
+19. Fin
